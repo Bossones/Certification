@@ -1,8 +1,11 @@
 import ru.croc.test.TestRunnable;
 import ru.croc.test.TestThread;
+import ru.croc.test.lock.LockTest;
 
 import java.util.Objects;
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;
 
 public class Main {
@@ -42,5 +45,6 @@ public class Main {
             if (Objects.nonNull(executorService)) executorService.shutdown();
         }
         System.out.println("end");
+
     }
 }
